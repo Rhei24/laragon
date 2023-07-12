@@ -13,3 +13,5 @@
     - REFER to other components dropdown,navlink,responsive navlink (howd they do it)
     - making darkmodetoggle as a component export
     darkmode done, used string with boolean effect ('','dark')
+
+    - added npm heroicon so i dont have to individually download svg
