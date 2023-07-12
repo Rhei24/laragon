@@ -12,3 +12,4 @@
     - carry over enable state to parent 
     - REFER to other components dropdown,navlink,responsive navlink (howd they do it)
     - making darkmodetoggle as a component export
+    darkmode done, used string with boolean effect ('','dark')
