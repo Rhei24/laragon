@@ -1,9 +1,14 @@
 11/7/2023
-    ! current problem, localstorage stores false but still displays true
+    !! current problem, localstorage stores false but still displays true
      -> using string 'dark'/'' rather than true/false state 
     -localstorage stores as type:string
     -darkmode set to 'class' in tailwindcss
     - dunno what the ... in props
 
 12/7/2023
-    
+    - added headlessui for darkmode
+    ! svg should change when button is toggled (off - lightmode, on - darkmode)
+    ! put transition when svg is changed 
+    - carry over enable state to parent 
+    - REFER to other components dropdown,navlink,responsive navlink (howd they do it)
+    - making darkmodetoggle as a component export

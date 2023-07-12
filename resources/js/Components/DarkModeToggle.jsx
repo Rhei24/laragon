@@ -2,7 +2,10 @@ import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 
 export default function DarkModeToggle() {
+  /* use parent state */
+  /*
   const [enabled, setEnabled] = useState(false)
+  */
 
   return (
 
@@ -14,6 +17,8 @@ export default function DarkModeToggle() {
     }
   */
 
+    /* what the switch do */
+    /* make switch use useState from parent(AuthenticatedLayout) */
     <Switch
       checked={enabled}
       onChange={setEnabled}
@@ -21,6 +26,7 @@ export default function DarkModeToggle() {
         enabled ? 'bg-blue-600' : 'bg-gray-200'
       } relative inline-flex h-6 w-11 items-center rounded-full`}
     >
+      {/* sr for accessibility purposes */}
       <span className="sr-only">Enable notifications</span>
       <span
         className={`${
