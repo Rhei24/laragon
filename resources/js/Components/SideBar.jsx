@@ -5,13 +5,14 @@ import {
 import ApplicationLogo from './ApplicationLogo'
 
 /* text-slate-200(?) hover:text-white */
+/* sticky */
 
 
 export default function SideBar() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto w-max bg-blue-700">
         {/* flex container, not sure sa justify and items */}
-        <div className="p-4 bg-blue-700 text-white">
+        <div className="p-4 text-white">
             <div className=" flex flex-col gap-y-2 justify-start items-start">
             {/* Logo Area */}
                 <div>
@@ -21,7 +22,7 @@ export default function SideBar() {
             {/* Logo Area */}
 
             {/* Tabs Area */}
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1 ">
                 <HomeIcon className="w-6 h-6"/>
                 <span className="">Dashboard</span>
             </button>
