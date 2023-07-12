@@ -15,3 +15,4 @@
     darkmode done, used string with boolean effect ('','dark')
 
     - added npm heroicon so i dont have to individually download svg
+    ! need to make sidebar content bigger (Without using padding)

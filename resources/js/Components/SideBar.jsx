@@ -10,39 +10,39 @@ import ApplicationLogo from './ApplicationLogo'
 
 export default function SideBar() {
   return (
-    <div className="container mx-auto w-max bg-blue-700">
+    <div className="w-max bg-blue-700 rounded-l-md">
         {/* flex container, not sure sa justify and items */}
-        <div className="p-4 text-white">
-            <div className=" flex flex-col gap-y-2 justify-start items-start">
+        <div className="text-white px-4">
+            <div className="flex flex-col gap-y-2">
             {/* Logo Area */}
-                <div>
+                <div className="flex mb-8 pt-4">
                     {/* haven't check this jsx yet */}
-                    <ApplicationLogo className="text-white w-18 h-18"/>
+                    <ApplicationLogo className="text-white w-12 h-12"/>
                 </div>
-            {/* Logo Area */}
+            {/* Logo end*/}
 
             {/* Tabs Area */}
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1 ">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 rounded-md px-2 py-1">
                 <HomeIcon className="w-6 h-6"/>
                 <span className="">Dashboard</span>
             </button>
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 rounded-md px-2 py-1">
                 <UserGroupIcon className="w-6 h-6"/>
                 <span className="">Team</span>
             </button>
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 rounded-md px-2 py-1">
                 <FolderIcon className="w-6 h-6"/>
                 <span className="">Projects</span>
             </button>
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 rounded-md px-2 py-1">
                 <CalendarIcon className="w-6 h-6"/>
                 <span className="">Calendar</span>
             </button>
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 rounded-md px-2 py-1">
                 <DocumentDuplicateIcon className="w-6 h-6"/>
                 <span className="">Documents</span>
             </button>
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 rounded-md px-2 py-1">
                 <ChartPieIcon className="w-6 h-6"/>
                 <span className="">Reports</span>
             </button>

@@ -12,11 +12,10 @@ export default function Dashboard({ auth }) {
             <Head title="Dashboard" />
             {/* Left content */}
             <div className="flex">
-                <div>
+                <div className="">
                 <SideBar/>
-                    {/*<DarkModeToggle toggle={enabled} setToggle={setEnabled}/> */}
-                {/* Temporary working area */}
-            </div>
+                </div>
+                
             {/* Right content */}
             <div className="py-8 w-full">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
