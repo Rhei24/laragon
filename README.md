@@ -64,3 +64,23 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+Initializing Project:
+    1.) Extract the zip file to the laragon\www folder
+    2.) Open Laragon
+        *press Start All
+    3.) add localhost in ETC/HOSTS.ini (can be found in laragon by right-clicking->Tools->Edit drivers\etc\hosts)
+        *laragon also adds this automatically
+    4.) in the Settings(Cog Icon on the top-right), go to General and change the Document Root to the www\laragon\public 
+    5.) make a new .env using the .env.example
+    *set your own DB name
+    6.) In any terminal(ex. command prompt), do the following commands in each line:
+          php artisan migrate
+          npm install
+          npm run dev
+
+
