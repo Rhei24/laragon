@@ -1,0 +1,9 @@
+11/7/2023
+    ! current problem, localstorage stores false but still displays true
+     -> using string 'dark'/'' rather than true/false state 
+    -localstorage stores as type:string
+    -darkmode set to 'class' in tailwindcss
+    - dunno what the ... in props
+
+12/7/2023
+    
