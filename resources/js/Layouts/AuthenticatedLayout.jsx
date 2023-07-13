@@ -36,9 +36,10 @@ export default function Authenticated({ user, header, children }) {
     return (
         /* ! current problem, localstorage stores false but still displays true*/
         
+        /* darkmode toggle */
         <div className={toggle}>
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 ">
-            {/* ?? */}
+            {/* border under the TopBar */}
             <nav className="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
                 {/* TopBar */}
                 <div className="w-full pl-2 pr-8">
@@ -52,10 +53,11 @@ export default function Authenticated({ user, header, children }) {
                                     <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
                                 </Link>
                                 */}
-                                {/* Button for darkmode (put in a separate component)*/}
+                                {/* Button for darkmode (put in a separate component - done)*/}
 
-                                {/* darkmode end */}
-                                {/* temporary headlessui darkmode toggle */}
+                                {/* 
+                                    darkmode end */}
+                                {/* temporary headlessui darkmode toggle - just to show how headlessui works */}
                                 <DarkModeToggle toggle={toggle} setToggle={setToggle} handleDarkModeToggle={handleDarkModeToggle}/>
                             </div>
 
@@ -67,7 +69,7 @@ export default function Authenticated({ user, header, children }) {
                             </div>
                         </div>
                         
-
+                        {/* dropdown found beside user (top-right) */}
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
                             <div className="ml-3 relative">
                                 <Dropdown>
@@ -104,7 +106,11 @@ export default function Authenticated({ user, header, children }) {
                                 </Dropdown>
                             </div>
                         </div>
+                        {/* dropdown end */}
 
+
+                        {/* shows on smaller screens */}
+                        {/* negative margin for? */}
                         <div className="-mr-2 flex items-center sm:hidden">
                             <button
                                 onClick={() => setShowingNavigationDropdown((previousState) => !previousState)}
@@ -131,6 +137,8 @@ export default function Authenticated({ user, header, children }) {
                     </div>
                 </div>
 
+                {/* whole NavBar that appears in small screen shown here */}
+                {/* sm:hidden is constant while ? block: hidden depends on the State being either true or false*/}
                 <div className={(showingNavigationDropdown ? 'block' : 'hidden') + ' sm:hidden'}>
                     <div className="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink href={route('dashboard')} active={route().current('dashboard')}>
@@ -143,7 +151,7 @@ export default function Authenticated({ user, header, children }) {
                             <div className="font-medium text-base text-gray-800 dark:text-gray-200">{user.name}</div>
                             <div className="font-medium text-sm text-gray-500">{user.email}</div>
                         </div>
-
+                        
                         <div className="mt-3 space-y-1">
                             <ResponsiveNavLink href={route('profile.edit')}>Profile</ResponsiveNavLink>
                             <ResponsiveNavLink method="post" href={route('logout')} as="button">
@@ -153,17 +161,20 @@ export default function Authenticated({ user, header, children }) {
                     </div>
                 {/* SideBar here for ResponsiveNavLink */}
                        <div className="mt-3">
+                        {/* try to send prop of classname='' here */}
                                 <SideBar />
                        </div>
                 </div>
             </nav>
 
+            {/* ?? && */}
             {header && (
                 <header className="bg-white dark:bg-gray-800 shadow">
                     <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">{header}</div>
                 </header>
             )}
 
+            {/* find where the main at */}
             <main>{children}</main>
         </div>
         {/* darkmode end*/}

@@ -1,5 +1,5 @@
 11/7/2023
-    !! current problem, localstorage stores false but still displays true
+    done !! current problem, localstorage stores false but still displays true
      -> using string 'dark'/'' rather than true/false state 
     -localstorage stores as type:string
     -darkmode set to 'class' in tailwindcss
@@ -7,7 +7,7 @@
 
 12/7/2023
     - added headlessui for darkmode
-    ! svg should change when button is toggled (off - lightmode, on - darkmode)
+    done ! svg should change when button is toggled (off - lightmode, on - darkmode)
     ! put transition when svg is changed 
     - carry over enable state to parent 
     - REFER to other components dropdown,navlink,responsive navlink (howd they do it)
@@ -17,8 +17,14 @@
     - added npm heroicon so i dont have to individually download svg
     ! need to make sidebar content bigger (Without using padding)
 
-13/7/2023 
+13/7/2023  
     - transfer buttons to a new component
     - learn how the ...props/{children}/{disabled} works
-    ! Authenticatedlayout.jsx no 3xl screen support (max limit of 1280px)
+    !! Authenticatedlayout.jsx no 3xl screen support (max limit of 1280px)
     - container and mx-auto causing problems, try to set container only once
+    - learn useRef, forward ref for TextInput
+    - add tailwindcss Prettier
+    - what if add classname='' in props so it will accept hidden class (?) try in SideBar later
+    - what the diff between inline-flex and flex
+    - inertia.js/react handles the routing using Link (Head - ?)
+    - && condition react

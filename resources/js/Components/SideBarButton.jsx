@@ -2,7 +2,7 @@ import React from 'react'
 
 /* <SideBarButton> </SideBarButton> */
 /*  just the button skeleton for now */
-
+/* how does {children} work */
 
 export default function SideBarButton( {children}) {
   return (

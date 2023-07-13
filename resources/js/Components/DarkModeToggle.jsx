@@ -13,7 +13,7 @@ export default function DarkModeToggle({ toggle, setToggle, handleDarkModeToggle
 
       /*
     const [onToggle, setOnToggle] = useState(false);
-    
+    `
     const toggle = () => {
         setOnToggle((previousState) => !previousState);
     }
@@ -39,7 +39,7 @@ export default function DarkModeToggle({ toggle, setToggle, handleDarkModeToggle
     {/* {console.log(toggle)} */} 
 
     {/* should depend on toggle state not on enabled boolean state*/}
-    {/* removed onChange, idk what checked is */}
+    {/* removed onChange={}, idk what checked is */}
     <Switch
       checked={toggle}
       onClick={handleDarkModeToggle}

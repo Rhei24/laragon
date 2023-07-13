@@ -12,6 +12,7 @@ import SideBarButton from './SideBarButton'
 
 export default function SideBar({}) {
   return (
+    /* try to send prop of classname='' here */
     <>
         {/* Content */}
         <div className="text-black dark:text-white p-4 bg-transparent sm:bg-current sm:bg-blue-700 sm:dark:bg-black rounded-l-lg space-y-4">
@@ -29,27 +30,27 @@ export default function SideBar({}) {
             <div className="flex flex-col gap-y-2">
             <SideBarButton>
                 <HomeIcon className="w-6 h-6"/>
-                <span className="">Dashboard</span>
+                <span>Dashboard</span>
             </SideBarButton>
             <SideBarButton>
                 <UserGroupIcon className="w-6 h-6"/>
-                <span className="">Team</span>
+                <span>Team</span>
             </SideBarButton>
             <SideBarButton>
                 <FolderIcon className="w-6 h-6"/>
-                <span className="">Projects</span>
+                <span>Projects</span>
             </SideBarButton>
             <SideBarButton>
                 <CalendarIcon className="w-6 h-6"/>
-                <span className="">Calendar</span>
+                <span>Calendar</span>
             </SideBarButton>
             <SideBarButton>
                 <DocumentDuplicateIcon className="w-6 h-6"/>
-                <span className="">Documents</span>
+                <span>Documents</span>
             </SideBarButton>
             <SideBarButton>
                 <ChartPieIcon className="w-6 h-6"/>
-                <span className="">Reports</span>
+                <span>Reports</span>
             </SideBarButton>
 
             <SideBarButton>
@@ -60,8 +61,6 @@ export default function SideBar({}) {
             {/* Tabs end */}
 
             {/* Teams Area */}
-            
-            
             <div className="flex flex-col gap-y-2">
             <h6>Your teams</h6>
             <SideBarButton>

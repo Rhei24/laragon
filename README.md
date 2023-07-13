@@ -70,17 +70,31 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 Initializing Project:
+<br/>
+<br/>
     1.) Extract the zip file to the laragon\www folder
+<br/>
     2.) Open Laragon
+<br/>    
         *press Start All
+<br/>        
     3.) add localhost in ETC/HOSTS.ini (can be found in laragon by right-clicking->Tools->Edit drivers\etc\hosts)
+<br/>    
         *laragon also adds this automatically
-    4.) in the Settings(Cog Icon on the top-right), go to General and change the Document Root to the www\laragon\public 
+<br/>    
+    4.) in the Settings(Cog Icon on the top-right), go to General and change the Document Root to the www\laragon\public
+<br/> 
     5.) make a new .env using the .env.example
+<br/>
     *set your own DB name
+<br/>
     6.) In any terminal(ex. command prompt), do the following commands in each line:
+<br/>
           php artisan migrate
+<br/>
           npm install
+<br/>
           npm run dev
+<br/>
 
 
