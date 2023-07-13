@@ -16,3 +16,9 @@
 
     - added npm heroicon so i dont have to individually download svg
     ! need to make sidebar content bigger (Without using padding)
+
+13/7/2023 
+    - transfer buttons to a new component
+    - learn how the ...props/{children}/{disabled} works
+    ! Authenticatedlayout.jsx no 3xl screen support (max limit of 1280px)
+    - container and mx-auto causing problems, try to set container only once

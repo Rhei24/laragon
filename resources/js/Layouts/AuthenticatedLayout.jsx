@@ -39,9 +39,9 @@ export default function Authenticated({ user, header, children }) {
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 ">
             {/* ?? */}
             <nav className="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
-                {/*  */}
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Topbar divider */}
+                {/* TopBar */}
+                <div className="w-full pl-2 pr-8">
+                    {/* TopBar divider */}
                     <div className="flex justify-between h-16">
                         {/* Replace Profile Navbar on smallscreen */}
                         <div className="flex">
@@ -58,7 +58,7 @@ export default function Authenticated({ user, header, children }) {
                                 <DarkModeToggle toggle={toggle} setToggle={setToggle} handleDarkModeToggle={handleDarkModeToggle}/>
                             </div>
 
-
+                            {/* TopBar link */}
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                                     dashboard

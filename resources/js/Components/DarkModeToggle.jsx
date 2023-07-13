@@ -36,7 +36,7 @@ export default function DarkModeToggle({ toggle, setToggle, handleDarkModeToggle
         {/*<span className='text-white'>Test</span> */}
     </button>
     {/* logs current state */}
-    {console.log(toggle)} 
+    {/* {console.log(toggle)} */} 
 
     {/* should depend on toggle state not on enabled boolean state*/}
     {/* removed onChange, idk what checked is */}
