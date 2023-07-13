@@ -7,23 +7,26 @@ import SideBarButton from './SideBarButton'
 
 /* text-slate-200(?) hover:text-white */
 /* sticky */
+/* edit so that Content fits in the ResponsiveNavLink */
 
 
-export default function SideBar() {
+export default function SideBar({}) {
   return (
-    <div className="">
-        {/* flex container, not sure sa justify and items */}
-        <div className="text-black dark:text-white px-4 bg-blue-700 rounded-r-lg">
-            {/*  */}
-                <div className="flex mb-8 pt-4">
-                    {/* haven't check this jsx yet */}
-                    <ApplicationLogo className="text-white w-12 h-12"/>
+    <>
+        {/* Content */}
+        <div className="text-black dark:text-white p-4 bg-transparent sm:bg-current sm:bg-blue-700 sm:dark:bg-black rounded-l-lg space-y-4">
+                {/* Logo Area */}
+                <div className="hidden sm:flex mb-8 pt-4">
+                    
+                    <ApplicationLogo className="stroke-red-800 fill-red-500 w-12 h-12"/>
                 </div>
-            <div className="max-w-2xl space-y-2">
-            {/* Logo Area */}
-            {/* Logo end*/}
-
+                 {/* Logo end*/}
+            
+        
+        {/* Content */}
+        <div className="flex flex-col gap-y-6 mb-6">
             {/* Tabs Area */}
+            <div className="flex flex-col gap-y-2">
             <SideBarButton>
                 <HomeIcon className="w-6 h-6"/>
                 <span className="">Dashboard</span>
@@ -53,9 +56,13 @@ export default function SideBar() {
                 <DocumentDuplicateIcon className="w-6 h-6"/>
                 <span>SideBarButtonComponentImports</span>
             </SideBarButton>
+            </div>
             {/* Tabs end */}
 
             {/* Teams Area */}
+            
+            
+            <div className="flex flex-col gap-y-2">
             <h6>Your teams</h6>
             <SideBarButton>
                 <div className="px-2 py-1 border border-slate-400 bg-slate-300 bg-transparent rounded text-xs bg-opacity-30">H</div>
@@ -72,14 +79,15 @@ export default function SideBar() {
                 <span className="">Workcation</span>
             </SideBarButton>
             </div>
+        </div>
 
             {/* Settings */}
 
-            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1 mt-20">
+            <button className="flex items-center space-x-2 hover:bg-slate-500 w-full focus:bg-slate-500 px-2 py-1 mt-full">
                 <Cog6ToothIcon className="w-6 h-6"/>
                 <span className="">Settings</span>
             </button>
         </div>
-    </div>
+    </>
   )
 }

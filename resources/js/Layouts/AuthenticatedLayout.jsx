@@ -5,6 +5,7 @@ import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
 import DarkModeToggle from '@/Components/DarkModeToggle';
+import SideBar from '@/Components/SideBar';
 
 export default function Authenticated({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
@@ -150,6 +151,10 @@ export default function Authenticated({ user, header, children }) {
                             </ResponsiveNavLink>
                         </div>
                     </div>
+                {/* SideBar here for ResponsiveNavLink */}
+                       <div className="mt-3">
+                                <SideBar />
+                       </div>
                 </div>
             </nav>
 
