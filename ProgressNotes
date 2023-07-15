@@ -28,3 +28,11 @@
     - what the diff between inline-flex and flex
     - inertia.js/react handles the routing using Link (Head - ?)
     - && condition react
+
+14/7/2023
+    - put authentication to email
+    ! requires a live server (?) dont know this part
+
+15/7/2023
+    - change welcomepage to a legit landingpage
+    - learn backtick for putting react into className

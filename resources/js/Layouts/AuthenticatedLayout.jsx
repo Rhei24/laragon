@@ -30,7 +30,6 @@ export default function Authenticated({ user, header, children }) {
         localStorage.setItem('toggle', newToggle);
 
         /* darkmode end */
-
       };
 
     return (

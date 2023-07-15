@@ -13,7 +13,7 @@ import SideBarButton from './SideBarButton'
 export default function SideBar({}) {
   return (
     /* try to send prop of classname='' here */
-    <>
+    <div className="">
         {/* Content */}
         <div className="text-black dark:text-white p-4 bg-transparent sm:bg-current sm:bg-blue-700 sm:dark:bg-black rounded-l-lg space-y-4">
                 {/* Logo Area */}
@@ -59,7 +59,7 @@ export default function SideBar({}) {
             </SideBarButton>
             </div>
             {/* Tabs end */}
-
+    
             {/* Teams Area */}
             <div className="flex flex-col gap-y-2">
             <h6>Your teams</h6>
@@ -87,6 +87,6 @@ export default function SideBar({}) {
                 <span className="">Settings</span>
             </button>
         </div>
-    </>
+    </div>
   )
 }
