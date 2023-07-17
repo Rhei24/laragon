@@ -35,6 +35,7 @@ export default function Welcome({ auth }) {
 
       };
 
+      /*<img src="https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg" className="h-24 w-full mb-2 border object-cover"/> */
     return (
         <div className={`${toggle}`}>
             <div className="relative min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -77,23 +78,33 @@ export default function Welcome({ auth }) {
                 </div>
             </div>
             {/* Main Content */}
-                <div className="flex justify-between text-black dark:text-white">
+                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between text-black dark:text-white">
                     {/* Left Content */}
-                    <div className="w-1/2 p-8 mx-8">
+                    <div className="md:w-1/2 md:p-8 md:mx-8">
                         {/* Logo and Description div */}
                         <div className="mb-24">
                         <ApplicationLogo className="h-24 w-24"/>
                         <p>Very long paragraph that explains what the website is about n all about that jazz.Very long paragraph that explains what the website is about n all about that jazz.</p>
+                        <Link href="/map" as="button" type="button" className="text-blue-600">Map</Link>
                         </div>
                     
                     {/* Card Area */}
-                        <div className="grid grid-cols-3 gap-8 border p-6">
+                        <div className="grid grid-cols-1 justify-items-center md:grid-cols-3 gap-8 border md:p-6 md:max-h-7xl md:max-w-7xl">
                             {/* Card */}
-                            <a href="/" className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700">
-                                <img src="https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg" className="h-24 w-full mb-2 border object-cover"/>
-                                <span><a href="/" className="text-blue-600 text-sm">Banana</a></span>
-                                <span><a href="/" className="text-blue-600 text-sm"><p className="text-left text-xs truncate">verylongusernamethatbecomes...cause its too long</p></a></span>
-                                <p className="break-all w-full mb-4 text-xs h-24 truncate">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                            <a href="/" className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96">
+                                <img src='/images/farmer1.png' className="w-full mb-2 border object-cover"/>
+                                <span><a href="/" className="text-sm dark:text-white leading-3">FirstName MiddleName Initial LastName</a></span>
+                                <span><a href="/" className="text-blue-600 text-sm hover:underline underline-offset-2"><p className="text-left text-xs truncate">verylongusernamethatbecomes...cause its too long</p></a></span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a href="/" className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96">
+                                <img src='/images/farmer1.png' className="w-full mb-2 border object-cover"/>
+                                <span><a href="/" className="text-sm dark:text-white leading-3">FirstName MiddleName Initial LastName</a></span>
+                                <span><a href="/" className="text-blue-600 text-sm hover:underline underline-offset-2"><p className="text-left text-xs truncate">verylongusernamethatbecomes...cause its too long</p></a></span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                                 
                             </a>
                             {/* Card end */}

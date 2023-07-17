@@ -41,4 +41,4 @@
 17/7/2023
     - use max-w-(size) to limit size in screens (can target specific screens)
     - use line-clamp to limit lines
-    - 
+    - make the tailwindcss prettier work
