@@ -37,3 +37,8 @@
     - change welcomepage to a legit landingpage
     - learn backtick for putting react into className
     ! card paragraph content should have limit then it goes ... after max is reached
+
+17/7/2023
+    - use max-w-(size) to limit size in screens (can target specific screens)
+    - use line-clamp to limit lines
+    - 
