@@ -36,3 +36,4 @@
 15/7/2023
     - change welcomepage to a legit landingpage
     - learn backtick for putting react into className
+    ! card paragraph content should have limit then it goes ... after max is reached
