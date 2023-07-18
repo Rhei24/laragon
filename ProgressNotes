@@ -44,3 +44,8 @@
     - make the tailwindcss prettier work
     - npm install @ubilabs/google-maps-react-hooks -D
     - learn https://www.youtube.com/watch?v=s4n_x5B58Dw&list=PL2rFahu9sLJ2QuJaKKYDaJp0YqjFCDCtN&index=4
+
+18/7/2023
+    - the API should be taken from .env (using process.env which doesnt work atm)
+    - GoogleMapProvider - wrapper for googlemaps Hooks
+    
