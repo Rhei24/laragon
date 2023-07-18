@@ -42,3 +42,5 @@
     - use max-w-(size) to limit size in screens (can target specific screens)
     - use line-clamp to limit lines
     - make the tailwindcss prettier work
+    - npm install @ubilabs/google-maps-react-hooks -D
+    - learn https://www.youtube.com/watch?v=s4n_x5B58Dw&list=PL2rFahu9sLJ2QuJaKKYDaJp0YqjFCDCtN&index=4

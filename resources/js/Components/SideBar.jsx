@@ -15,7 +15,7 @@ export default function SideBar({}) {
     /* try to send prop of classname='' here */
     <div className="">
         {/* Content */}
-        <div className="text-black dark:text-white p-4 bg-transparent sm:bg-current sm:bg-blue-700 sm:dark:bg-black rounded-l-lg space-y-4">
+        <div className="text-black dark:text-white p-4 sm:bg-blue-700 sm:dark:bg-black rounded-l-lg space-y-4">
                 {/* Logo Area */}
                 <div className="hidden sm:flex mb-8 pt-4">
                     

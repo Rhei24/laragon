@@ -29,9 +29,9 @@ export default function DarkModeToggle({ toggle, setToggle, handleDarkModeToggle
     {
       /* setting colors for svg cause idk why sun goes solid when import is outline */
         toggle === '' ?
-        <MoonIcon className="text-black w-6 h-6"/>
+        <SunIcon className="text-black w-6 h-6"/>
         :
-        <SunIcon className="text-white w-6 h-6"/>
+        <MoonIcon className="text-white w-6 h-6"/>
     }
         {/*<span className='text-white'>Test</span> */}
     </button>
