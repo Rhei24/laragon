@@ -54,3 +54,7 @@
     - learn https://www.youtube.com/watch?v=OtqxDT0IlHI  DO THE CAROUSEL
     - speedrun codeacademy react
     
+20/7/2023
+    - import { register } from "swiper/element/bundle"; and register(); always in parent 
+    - swiper/react is a depreciated version, convert to swiper web component
+    
