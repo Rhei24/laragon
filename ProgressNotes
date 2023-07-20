@@ -1,30 +1,56 @@
 11/7/2023
-done !! current problem, localstorage stores false but still displays true
--> using string 'dark'/'' rather than true/false state
--localstorage stores as type:string
--darkmode set to 'class' in tailwindcss - dunno what the ... in props
+    done !! current problem, localstorage stores false but still displays true
+    -> using string 'dark'/'' rather than true/false state
+    -localstorage stores as type:string
+    -darkmode set to 'class' in tailwindcss - dunno what the ... in props
 
-12/7/2023 - added headlessui for darkmode
-done ! svg should change when button is toggled (off - lightmode, on - darkmode)
-! put transition when svg is changed - carry over enable state to parent - REFER to other components dropdown,navlink,responsive navlink (howd they do it) - making darkmodetoggle as a component export
-darkmode done, used string with boolean effect ('','dark')
+12/7/2023 
+    - added headlessui for darkmode
+    done ! svg should change when button is toggled (off - lightmode, on - darkmode)
+    ! put transition when svg is changed - carry over enable state to parent - REFER to other components dropdown,navlink,responsive navlink (howd they do it) - making darkmodetoggle as a component export
+    darkmode done, used string with boolean effect ('','dark')
 
     - added npm heroicon so i dont have to individually download svg
     ! need to make sidebar content bigger (Without using padding)
 
 13/7/2023
+    - transfer buttons to a new component 
+    - learn how the ...props/{children}/{disabled} works
+    !! Authenticatedlayout.jsx no 3xl screen support (max limit of 1280px) 
+    - container and mx-auto causing problems, try to set container only once 
+    - learn useRef, forward ref for TextInput 
+    - add tailwindcss Prettier 
+    - what if add classname='' in props so it will accept hidden class (?) try in SideBar later 
+    - what the diff between inline-flex and flex 
+    - inertia.js/react handles the routing using Link (Head - ?) - && condition react
 
--   transfer buttons to a new component - learn how the ...props/{children}/{disabled} works
-    !! Authenticatedlayout.jsx no 3xl screen support (max limit of 1280px) - container and mx-auto causing problems, try to set container only once - learn useRef, forward ref for TextInput - add tailwindcss Prettier - what if add classname='' in props so it will accept hidden class (?) try in SideBar later - what the diff between inline-flex and flex - inertia.js/react handles the routing using Link (Head - ?) - && condition react
+14/7/2023 
+    - put authentication to email
+    ! requires a live server (?) dont know this part
 
-14/7/2023 - put authentication to email
-! requires a live server (?) dont know this part
+15/7/2023 
+    - change welcomepage to a legit landingpage 
+    - learn backtick for putting react into className
+    ! card paragraph content should have limit then it goes ... after max is reached
 
-15/7/2023 - change welcomepage to a legit landingpage - learn backtick for putting react into className
-! card paragraph content should have limit then it goes ... after max is reached
+17/7/2023 
+    - use max-w-(size) to limit size in screens (can target specific screens) 
+    - use line-clamp to limit lines 
+    - make the tailwindcss prettier work 
+    - npm install @ubilabs/google-maps-react-hooks -D 
+    - learn https://www.youtube.com/watch?v=s4n_x5B58Dw&list=PL2rFahu9sLJ2QuJaKKYDaJp0YqjFCDCtN&index=4
 
-17/7/2023 - use max-w-(size) to limit size in screens (can target specific screens) - use line-clamp to limit lines - make the tailwindcss prettier work - npm install @ubilabs/google-maps-react-hooks -D - learn https://www.youtube.com/watch?v=s4n_x5B58Dw&list=PL2rFahu9sLJ2QuJaKKYDaJp0YqjFCDCtN&index=4
+18/7/2023 
+    - the API should be taken from .env (using process.env which doesnt work atm) 
+    - GoogleMapProvider -> wrapper for googlemaps Hooks 
+    - Location suddenly gone
 
-18/7/2023 - the API should be taken from .env (using process.env which doesnt work atm) - GoogleMapProvider - wrapper for googlemaps Hooks - Location suddenly gone
-
-19/7/2023 - useRef hook - allows persist of values between renders - idk why theres master branch in source control i didnu nuffin
+19/7/2023 
+    - useRef hook -> allows persist of values between renders
+    - { map } coming from useGoogleMap cant be deconstructed(idk how try stuff to fix)
+    i code . in www folder pepeg - idk why theres master branch in source control i didnu nuffin 
+    - npm install swiper 
+    done - need to make prettier ignore ProgressNotes
+    - learn https://www.youtube.com/watch?v=OtqxDT0IlHI  DO THE CAROUSEL
+    - speedrun codeacademy react
+    

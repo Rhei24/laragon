@@ -5,9 +5,15 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import DarkModeToggle from "@/Components/DarkModeToggle";
 import ApplicationLogo from "@/Components/ApplicationLogo";
 
-export default function Welcome({ auth }) {
-    /* for responsivenav */
+import Carousel from "@/Components/Carousel";
 
+// mock data for carousel
+import data from "@/Data/mock.json";
+
+export default function Welcome({ auth }) {
+    /* starts swiper */
+
+    /* for responsivenav */
     const [showingNavigationDropdown, setShowingNavigationDropdown] =
         useState(false);
 
@@ -50,7 +56,7 @@ export default function Welcome({ auth }) {
                 {/* relative fixed so that Login/Register retains */}
                 {/* TopBar */}
                 {/* adjust padding same as other page */}
-                <div className="flex justify-between p-8">
+                <div className="flex justify-between px-2 py-4 md:p-8">
                     <DarkModeToggle
                         toggle={toggle}
                         setToggle={setToggle}
@@ -85,13 +91,13 @@ export default function Welcome({ auth }) {
                     </div>
                 </div>
                 {/* Main Content */}
-                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between text-black dark:text-white">
+                <div className="flex flex-col justify-center items-center md:justify-between text-black dark:text-white">
                     {/* Left Content */}
                     <div className="md:w-1/2 md:p-8 md:mx-8">
                         {/* Logo and Description div */}
-                        <div className="mb-24">
+                        <div className="mb-4 md:mb-24 flex flex-col items-center md:block">
                             <ApplicationLogo className="h-24 w-24" />
-                            <p>
+                            <p className="mx-2">
                                 Very long paragraph that explains what the
                                 website is about n all about that jazz.Very long
                                 paragraph that explains what the website is
@@ -107,12 +113,54 @@ export default function Welcome({ auth }) {
                             </Link>
                         </div>
 
+                        <Carousel data={data} className="mb-24" />
+
                         {/* Card Area */}
-                        <div className="grid grid-cols-1 justify-items-center md:grid-cols-3 gap-8 border md:p-6 md:max-h-7xl md:max-w-7xl">
+                        <div className="grid auto-cols-auto justify-items-center border md:grid-cols-10 grid-cols gap-12 space-x-2 md:p-6">
                             {/* Card */}
                             <a
                                 href="/"
-                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4 hover:-pb-12"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
                             >
                                 <img
                                     src="/images/farmer1.png"
@@ -152,11 +200,11 @@ export default function Welcome({ auth }) {
                             {/* Card */}
                             <a
                                 href="/"
-                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
                             >
                                 <img
                                     src="/images/farmer1.png"
-                                    className="w-full mb-2 border object-cover"
+                                    className="w-full mb-2 object-cover"
                                 />
                                 <span>
                                     <a
@@ -189,11 +237,286 @@ export default function Welcome({ auth }) {
                                 </p>
                             </a>
                             {/* Card end */}
-                            <div>Card#2</div>
-                            <div>Card#3</div>
-                            <div>Card#4</div>
-                            <div>Card#5</div>
-                            <div>Card#6</div>
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
+                            {/* Card */}
+                            <a
+                                href="/"
+                                className="p-3 shadow-md rounded-md overflow-hidden dark:bg-gray-700 w-96 mt-4"
+                            >
+                                <img
+                                    src="/images/farmer1.png"
+                                    className="w-full mb-2 object-cover"
+                                />
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-sm dark:text-white leading-3"
+                                    >
+                                        FirstName MiddleName Initial LastName
+                                    </a>
+                                </span>
+                                <span>
+                                    <a
+                                        href="/"
+                                        className="text-blue-600 text-sm hover:underline underline-offset-2"
+                                    >
+                                        <p className="text-left text-xs truncate">
+                                            verylongusernamethatbecomes...cause
+                                            its too long
+                                        </p>
+                                    </a>
+                                </span>
+                                <p className="break-all w-full mb-2 text-xs line-clamp-5 text-gray-400">
+                                    "Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </a>
+                            {/* Card end */}
                         </div>
                     </div>
                     {/* Left Content end */}
