@@ -28,19 +28,24 @@ export default function Carousel({ className = "", data }) {
                 speed="500"
                 loop="true"
                 css-mode="true"
+                navigation="true"
+                pagination="true"
+                scrollbar="true"
+                autoplay="2000"
             >
                 {/* <img src={slide.image} alt={slide.profileName} /> */}
                 {/* <Card data={data} className="h-24 w-24" /> */}
                 {/* editing Card here for now cause idk how to put Card component */}
                 {data.map((slide) => (
                     <swiper-slide key={slide.profileName}>
-                        {/* */}
-                        <div className="mx-1 shadow-lg bg-gray-200 rounded-lg hover:transition hover:scale-125 shrink-0 object-cover hover:cursor-pointer">
+                        {/* need to set width to fixed LEARN THIS */}
+                        <div className="mb-12 mx-1 shadow-lg brightness-75 dark:bg-gray-800 rounded-lg hover:transition hover:scale-125 object-cover hover:cursor-pointer">
                             <img
                                 src={slide.image}
                                 alt={slide.profileName}
-                                className="rounded-lg h-56 w-full"
+                                className="rounded-lg h-56 w-full shrink-0 grow-0"
                             />
+                            {/* Text div */}
                             <div className="p-2">
                                 <p className="text-lg font-bold">
                                     {slide.profileName}
